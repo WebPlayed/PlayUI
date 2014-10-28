@@ -1,0 +1,37 @@
+/*
+    init.scss
+
+    Initializes all the CSS needed to make PlayUI work.
+    Also resetting can be done here.
+
+    Please use .play-init ONLY for init.scss, so that we won't ruin other normalizers.
+*/
+
+.play-init {
+    height: 100%;
+    width: 100%;
+    
+
+    * {
+        padding:0;
+        margin:0;
+        font-family: sans-serif;
+        font-weight: 300;
+        color:#252525;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 100;
+    }
+    
+    p {
+        line-height: 1.2em;
+        margin-bottom: 20px;
+    }
+    
+    a {
+        text-decoration: none;
+        cursor:pointer;
+    }
+}
+

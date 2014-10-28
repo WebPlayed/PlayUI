@@ -1,0 +1,31 @@
+.play-notification-box {
+    position: fixed;
+    top:2%;
+    width: 95%;
+    height: 50px;
+    margin-left:2.5%;
+    margin-right: 2.5%;
+    background-color: #252525;
+    
+    
+    span {
+        color:white;
+        line-height: 50px;
+        display: block;
+        text-align: center;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    
+    &.success {
+        background-color: #8CCB77;
+    }
+    
+    &.error {
+        background-color:#f2dede;
+        
+        span {
+            color:#a94442;
+        }
+    }
+}
