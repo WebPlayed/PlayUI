@@ -1,0 +1,95 @@
+.play-list {
+    list-style-type: none;
+    width:98%;
+    margin: 1%;
+
+    li {
+        a {
+            display: block;
+            width: 97%;
+            padding: 10px 1.5%;
+            border-bottom: 1px solid $list-border-color;
+            background-color: $list-background-color;
+        }
+
+        &:first-child > a{
+            border-radius: $list-border-radius $list-border-radius 0px 0px;
+        }
+
+        &:last-child > a{
+            border-radius: 0px 0px $list-border-radius $list-border-radius;
+            border-bottom: none;
+        }
+
+        &.play-divider {
+            display: block;
+            width: 97%;
+            padding: 10px 1.5%;
+            border-bottom: 1px solid $list-border-color;
+            background-color: $sidemenu-background-color;
+            font-weight: 400;
+        }
+    }
+
+    &.play-avatar {
+        position:relative;
+
+        li {
+            a {
+                position: relative;
+                z-index: 2;
+                display: block;
+
+                padding:16px 0px 0;
+
+                background-color: $list-background-color;
+
+                text-decoration:none;
+                overflow:hidden;
+                white-space:nowrap;
+                min-height:40px;                
+
+                border-bottom: 1px solid $list-border-color;
+
+                width:100%;
+
+                img {
+                    position: absolute;
+                    top:16px;
+                    left:16px;
+                    max-width: 40px;
+                    max-height: 40px;
+                    width: 100%;
+                    border-radius: $list-border-radius;
+                }
+
+                h2 {
+                    margin:0 0 4px 0;
+                    font-weight: 400;
+                    font-size: 16px;
+                    padding-left:72px;
+                }  
+
+                p {
+                    font-size: 14px;
+                    padding-left:72px;
+                }
+
+
+
+                &:hover {
+                    background-color:#F8F0F0;
+                }
+            }
+
+            &:first-child > a{
+                border-radius: $list-border-radius $list-border-radius 0px 0px;
+            }
+
+            &:last-child > a{
+                border-radius: 0px 0px $list-border-radius $list-border-radius;
+                border: none;
+            }
+        }
+    }
+}

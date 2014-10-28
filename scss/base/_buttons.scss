@@ -1,10 +1,23 @@
 .play-button {
-    background-color: #8CCB77;
+    background-color: $button-standard-background-color;
     color:white;
     border:none;
     font-size: 17px;
-    padding:5px 7px;
+    padding:5px 1%;
     border-radius: 3px;
     cursor:pointer;
     outline: none;
+    text-align:center;
+    
+    &.play-fullscreen {
+        padding:10px 1%;
+        width: 96%;
+        display: block;
+        margin:1%;
+    }
+    
+    &:hover {
+        background-color: desaturate($button-standard-background-color, 10%);
+    }
+    
 }

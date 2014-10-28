@@ -9,3 +9,81 @@
     when the user clicks a button the side menu appears from the left side
 */
 
+.play-sidemenu {
+
+    height:100%;
+    background:$sidemenu-background-color;
+
+
+    h2 {
+
+    }
+
+    .play-sidemenu-left {
+        float:left;
+        width: 25%;
+        height: 100%;
+
+        border-right: 1px solid $sidemenu-border-color;
+
+        .play-container {
+            overflow-y: auto;
+            overflow-x: hidden;
+            max-height: 95%;
+        }
+
+        ul {
+
+            li.play-divider {
+                background-color: $sidemenu-background-color;
+                width: 94%;
+                padding:10px 3%;
+                font-weight: 400;
+            }
+
+            li {
+                width: 100%;
+                background-color:white;
+                border-bottom: 1px solid $sidemenu-border-color;
+
+                a {
+                    width: 94%;
+                    padding:10px 3%;
+                    display:block;
+
+                    &:hover {
+                        background-color:#F8F0F0;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .play-sidemenu-right {
+        float:left;
+        width: calc(75% - 1px);
+        height: 100%;
+
+        .play-container {
+            overflow-y: auto;
+            overflow-x: hidden;
+            max-height: 95%;
+        }
+
+    }
+
+    .play-sidemenu-left > h2, .play-sidemenu-right > h2 {
+        text-align: center;
+        border-bottom: 1px solid $sidemenu-border-color;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+
+
+}
