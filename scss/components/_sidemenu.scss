@@ -24,8 +24,6 @@
         width: 25%;
         height: 100%;
 
-        border-right: 1px solid $sidemenu-border-color;
-
         .play-container {
             overflow-y: auto;
             overflow-x: hidden;
@@ -62,8 +60,8 @@
 
     .play-sidemenu-right {
         float:left;
-        width: calc(75% - 1px);
         height: 100%;
+        width:75%;
 
         .play-container {
             overflow-y: auto;
