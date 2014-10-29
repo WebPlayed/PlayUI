@@ -1,0 +1,16 @@
+.play-header {   
+    width:100%;
+    text-align:center;
+    border-bottom:1px solid $list-border-color;
+    height:44px;
+    
+    h1 {
+        font-size: 17px;
+        min-width: 30px;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: 44px;
+        font-weight: 500;
+    }
+}
