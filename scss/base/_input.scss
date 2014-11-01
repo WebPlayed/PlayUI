@@ -1,0 +1,19 @@
+.play-input {
+    display: block;
+    padding-top:2px;
+    padding-left:10px;
+    height: 34px;
+    color:#252525;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 0px;
+    border-bottom:1px solid lightgray;
+    outline: none;
+    
+    
+    &.play-fullscreen {
+        width: 100%;
+    }
+}
+

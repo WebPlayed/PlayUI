@@ -7,7 +7,9 @@
     background-color: $sidemenu-background-color;
     border-top:1px solid $list-border-color;
     
-    
+    &+.play-content {
+        display:none;
+    }
     
     .play-tabs {
         text-align: center;
