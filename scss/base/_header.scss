@@ -1,8 +1,11 @@
-.play-header {   
+.play-header {  
+    
+    $header-bar-height: 44px;
+    
     width:100%;
     text-align:center;
     border-bottom:1px solid $list-border-color;
-    height:44px;
+    height:$header-bar-height;
     
     h1 {
         font-size: 17px;
@@ -10,7 +13,20 @@
         overflow:hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        line-height: 44px;
+        line-height: $header-bar-height;
         font-weight: 500;
+        display: inline-block;
+    }
+    
+    .play-left {
+        float:left;
+        line-height: $header-bar-height;
+        padding: 0 15px;
+    }
+    
+    .play-right {
+        float:right;
+        line-height: $header-bar-height;
+        padding: 0 15px;
     }
 }
