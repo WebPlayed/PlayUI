@@ -20,6 +20,7 @@
         height: 100%;
         border-right:1px solid $sidemenu-border-color;
         box-sizing: border-box;
+        background-color:$sidemenu-background-color;
 
         .play-container {
             overflow-y: auto;
@@ -78,7 +79,63 @@
         padding: 10px 0;
         font-size: 18px;
     }
+    
+    .play-sidemenu-open{
+        display: none;
+    }
 
+    .play-sidemenu-close {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background-color:grey;
+        opacity: 0.4;
+        z-index: 99;
+        display: none;
+    }
+}
 
+@media only screen and (max-width: 700px) {
+       
+    .play-sidemenu {
+        
+        .play-sidemenu-left {
+            position: absolute;
+            height: 100%;
+            z-index: 100;
+            display: block;
+            width: 65%;
+            left:-100%;
+                    
+            &:target {
+                -webkit-animation: slide 0.2s forwards;
+                animation: slide 0.2s forwards;
+            }
+            
+            &:target + .play-sidemenu-close {
+                display: block;
+            }
+            
+        }             
+        
+        .play-sidemenu-right {
+            width: 100%;
+        }
+        
+        .play-sidemenu-open {
+            display: block;
+            position: absolute;
+            left:0;
+            margin: 10px;
+        }
+    }  
+}
 
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
 }
